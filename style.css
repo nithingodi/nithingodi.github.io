@@ -232,3 +232,33 @@ body.dark .tools {
     margin-left: 10px;
   }
 }
+/* === SKILLS GRID (DOMAIN STYLE) === */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.skills-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 14px;
+  padding: 1.5rem;
+  color: var(--text);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.skills-card:hover {
+  transform: translateY(-4px);
+}
+.skills-card h4 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+.skills-card p {
+  font-size: 0.95rem;
+  color: var(--text);
+  opacity: 0.9;
+}
