@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -17,7 +18,7 @@ body {
   --bg: #ffffff;
   --text: #111111;
   --primary: #4263eb;
-  --accent: #f0f0f0;
+  --accent: #f5f7fa;
 }
 
 body.dark {
@@ -54,6 +55,9 @@ nav a {
   color: var(--text);
   font-weight: 500;
 }
+nav a i {
+  font-size: 1.2rem;
+}
 
 /* === HERO === */
 .hero {
@@ -82,7 +86,7 @@ nav a {
   font-size: 1.3rem;
 }
 
-/* === SECTION STYLES === */
+/* === SECTIONS === */
 section {
   padding: 3rem 2rem;
   max-width: 1000px;
@@ -90,26 +94,67 @@ section {
 }
 section h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.skills-grid, .project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-/* === FOOTER === */
-.footer {
-  padding: 2rem;
-  text-align: center;
-  background: var(--accent);
-  color: var(--text);
+/* === PROJECT GRID === */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
-.footer .icons a {
-  margin: 0 0.5rem;
-  color: var(--text);
-  font-size: 1.4rem;
+
+/* === PROJECT CARDS === */
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: var(--accent);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+}
+.card-left, .card-right {
+  flex: 1 1 45%;
+  min-width: 280px;
+  padding: 1rem;
+}
+.project-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.tags {
+  font-size: 0.85rem;
+  color: var(--primary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.problem {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+.tools {
+  border-top: 1px solid rgba(0,0,0,0.05);
+  padding-top: 0.5rem;
+  margin-top: 1rem;
+}
+body.dark .tools {
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+.tools span {
+  display: inline-block;
+  background: #dce0e4;
+  padding: 0.3rem 0.7rem;
+  border-radius: 16px;
+  margin: 0.25rem;
+  font-size: 0.8rem;
+  color: #111;
 }
 
 /* === DARK MODE TOGGLE === */
@@ -149,66 +194,6 @@ section h2 {
 }
 
 /* === ANIMATION === */
-.dynamic::after {
-  content: 'Clickstreams';
-  animation: rotateWords 8s infinite;
-  font-weight: 600;
-}
-@keyframes rotate1 {
-  0%, 25% { content: 'Clickstreams'; }
-  26%, 50% { content: 'Funnels'; }
-  51%, 75% { content: 'Forecasts'; }
-  76%, 100% { content: 'Signals'; }
-}
-@keyframes rotate2 {
-  0%, 25% { content: 'Cost Curves'; }
-  26%, 50% { content: 'Margins'; }
-  51%, 75% { content: 'Conversion Rates'; }
-  76%, 100% { content: 'Order Flow'; }
-}
-#first::after {
-  content: 'Clickstreams';
-  animation: rotate1 8s infinite;
-  font-weight: 600;
-}
-#second::after {
-  content: 'Cost Curves';
-  animation: rotate2 8s infinite;
-  font-weight: 600;
-}
-.project-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: var(--accent);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease;
-}
-.project-card:hover {
-  transform: translateY(-6px);
-}
-.card-left, .card-right {
-  flex: 1 1 45%;
-  min-width: 280px;
-  padding: 1rem;
-}
-.tags {
-  font-size: 0.85rem;
-  color: var(--text);
-  margin-bottom: 1rem;
-}
-.tools span {
-  display: inline-block;
-  background: #dce0e4;
-  padding: 0.3rem 0.7rem;
-  border-radius: 16px;
-  margin: 0.25rem;
-  font-size: 0.8rem;
-  color: #111;
-}
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -221,10 +206,29 @@ section h2 {
     transform: none;
   }
 }
+
+/* === FOOTER === */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: var(--accent);
+  color: var(--text);
+}
+.footer .icons a {
+  margin: 0 0.5rem;
+  color: var(--text);
+  font-size: 1.4rem;
+}
+
+/* === MOBILE === */
 @media (max-width: 768px) {
   .project-card {
     flex-direction: column;
   }
+  .card-left, .card-right {
+    flex: 1 1 100%;
+  }
+  nav a {
+    margin-left: 10px;
+  }
 }
-
-
