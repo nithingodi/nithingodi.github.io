@@ -154,10 +154,27 @@ section h2 {
   animation: rotateWords 8s infinite;
   font-weight: 600;
 }
-@keyframes rotateWords {
+@keyframes rotate1 {
   0%, 25% { content: 'Clickstreams'; }
-  26%, 50% { content: 'Cost Curves'; }
-  51%, 75% { content: 'Funnels'; }
-  76%, 100% { content: 'Forecasts'; }
+  26%, 50% { content: 'Funnels'; }
+  51%, 75% { content: 'Forecasts'; }
+  76%, 100% { content: 'Signals'; }
 }
+@keyframes rotate2 {
+  0%, 25% { content: 'Cost Curves'; }
+  26%, 50% { content: 'Margins'; }
+  51%, 75% { content: 'Conversion Rates'; }
+  76%, 100% { content: 'Order Flow'; }
+}
+#first::after {
+  content: 'Clickstreams';
+  animation: rotate1 8s infinite;
+  font-weight: 600;
+}
+#second::after {
+  content: 'Cost Curves';
+  animation: rotate2 8s infinite;
+  font-weight: 600;
+}
+
 
