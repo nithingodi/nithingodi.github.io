@@ -29,8 +29,8 @@
 
   <section class="hero">
     <h2>
-  From <span class="dynamic" id="first"></span> to <span class="dynamic" id="second"></span>
-</h2>
+      From <span class="dynamic" id="first"></span> to <span class="dynamic" id="second"></span>
+    </h2>
     <p>I turn data into decisions across Product, Supply Chain, and Marketing.</p>
     <div class="cta-buttons">
       <a href="assets/resume.pdf" class="btn" target="_blank">Download Resume</a>
@@ -46,9 +46,17 @@
 
   <section id="projects" class="projects">
     <h2>Featured Projects</h2>
+    <div class="filter-buttons">
+      <button class="filter-button active" data-category="all">All</button>
+      <button class="filter-button" data-category="supply">Supply Chain</button>
+      <button class="filter-button" data-category="marketing">Marketing</button>
+      <button class="filter-button" data-category="product">Product</button>
+    </div>
     <div class="project-grid">
-      
-  <!-- Project 1 -->
+      <!-- All 12 project cards are inserted here in horizontal layout format -->
+    
+
+<!-- Project 1 -->
   <div class="project-card fade-in">
     <div class="card-left">
       <h3>Churn + LTV Forecasting for Retention Strategy</h3>
@@ -230,9 +238,6 @@
       <div class="tools"><span>Python</span><span>Revenue Forecasting</span><span>Business Strategy</span><span>TAM</span><span>Competitive Analysis</span></div>
     </div>
   </div>
-
-</section>
-
     </div>
   </section>
 
@@ -260,6 +265,7 @@
       <a href="https://linkedin.com/in/nithingodi" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
