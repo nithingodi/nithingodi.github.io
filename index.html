@@ -47,7 +47,192 @@
   <section id="projects" class="projects">
     <h2>Featured Projects</h2>
     <div class="project-grid">
-      <!-- Cards will go here -->
+      
+  <!-- Project 1 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Churn + LTV Forecasting for Retention Strategy</h3>
+      <div class="tags">#Finance #Marketing #Predictive Modeling</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Customer churn was unpredictable, leading to poor retention targeting and wasted marketing spend. LTV segmentation was unavailable.
+      </p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Built a dual XGBoost pipeline in Python to classify churn and forecast LTV. Engineered features from contracts, usage, and tenure; applied SHAP for explainability.</p>
+      <p><strong>Result:</strong> Achieved 84% churn prediction F1 and ±$12 MAE on LTV; enabled targeted retention for high-value segments with actionable insights.</p>
+      <div class="tools"><span>Python</span><span>XGBoost</span><span>pandas</span><span>SHAP</span><span>Google Colab</span></div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>SKU Demand Forecast + ABC–XYZ Inventory Simulation</h3>
+      <div class="tags">#Supply Chain #Inventory #Simulation</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Overstocking and frequent stockouts across 700+ SKUs led to holding cost inefficiencies and customer dissatisfaction due to misaligned replenishment.
+      </p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Forecasted weekly SKU-level demand using Prophet and XGBoost, categorized SKUs with ABC–XYZ analysis, and built simulation logic to test reorder policy efficiency.</p>
+      <p><strong>Result:</strong> Improved inventory turns and reduced holding cost variance; optimized replenishment cycle for seasonal and erratic SKUs using classification insights.</p>
+      <div class="tools"><span>Python</span><span>Prophet</span><span>XGBoost</span><span>ABC–XYZ</span><span>Inventory Simulation</span></div>
+    </div>
+  </div>
+
+  <!-- Project 3 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Warehouse-to-Zone Allocation via Linear Programming</h3>
+      <div class="tags">#Supply Chain #Optimization #Logistics</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Inefficient warehouse-to-zone assignments led to increased delivery times and transportation costs across multiple retail fulfillment zones.
+      </p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Formulated a cost-minimization linear program using PuLP in Python, optimized allocation of shipments across 4 warehouses and 8 distribution zones.</p>
+      <p><strong>Result:</strong> Reduced transportation cost by 17% and improved average delivery SLA compliance by 9%, enabling faster customer fulfillment.</p>
+      <div class="tools"><span>Python</span><span>Linear Programming</span><span>PuLP</span><span>Logistics Cost Data</span></div>
+    </div>
+  </div>
+
+  <!-- Project 4 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>A/B Funnel Drop-Off + Rage Click Analysis</h3>
+      <div class="tags">#Product #UX Research #Experimentation</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Product managers lacked visibility into conversion drop-offs and friction points across the checkout funnel, limiting UX improvements.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Conducted A/B tests and session replay analysis using rage clicks, drop-off paths, and scroll-depth. Visualized funnel stages and friction zones with Python dashboards.</p>
+      <p><strong>Result:</strong> Improved funnel completion by 6.2% in variant B and uncovered key interaction issues near form submission on mobile devices.</p>
+      <div class="tools"><span>Python</span><span>A/B Testing</span><span>Session Replay</span><span>matplotlib</span><span>UX Analytics</span></div>
+    </div>
+  </div>
+
+  <!-- Project 5 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Conjoint Analysis for Price Sensitivity & Feature Tradeoffs</h3>
+      <div class="tags">#Marketing #Pricing Strategy #Survey Analytics</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Stakeholders lacked clarity on which product features drove purchase intent and how customers valued each relative to price.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Designed and analyzed a choice-based conjoint survey using Python. Modeled feature utilities and price elasticity to estimate market share changes.</p>
+      <p><strong>Result:</strong> Identified 3 high-utility features and optimal price point; informed packaging and upsell strategy to improve conversion by 9.4%.</p>
+      <div class="tools"><span>Python</span><span>Conjoint Analysis</span><span>Survey Design</span><span>Logistic Regression</span></div>
+    </div>
+  </div>
+
+  <!-- Project 6 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>GenAI Document QA Assistant (LangChain + RAG)</h3>
+      <div class="tags">#Product #AI #GenAI</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Internal product teams struggled to find answers across scattered documentation, slowing onboarding and bug triage.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Built an RAG-based chatbot using LangChain and FAISS to answer product documentation queries using vector search over 200+ Markdown files.</p>
+      <p><strong>Result:</strong> Delivered instant, context-aware responses with >88% retrieval accuracy; reduced doc lookup time by 70% during QA cycles.</p>
+      <div class="tools"><span>LangChain</span><span>FAISS</span><span>HuggingFace</span><span>Streamlit</span><span>RAG</span></div>
+    </div>
+  </div>
+
+  <!-- Project 7 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Production Simulation + Supply Commit Tracking</h3>
+      <div class="tags">#Supply Chain #Manufacturing #Capacity Planning</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Mismatch between production quotes and supply commitments led to capacity overflow and customer delivery delays.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Modeled supply commit vs build plan mismatches using Excel simulation and BOM-level SKU mapping. Flagged quote-PO variances and idle capacity risks.</p>
+      <p><strong>Result:</strong> Reduced missed delivery windows by 22%; improved supply–demand alignment and BOM traceability across vendor quotes.</p>
+      <div class="tools"><span>Excel</span><span>BOM Simulation</span><span>Supply Planning</span><span>Manufacturing Analytics</span></div>
+    </div>
+  </div>
+
+  <!-- Project 8 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Airbnb Superhost Classification using AI-Assisted Coding</h3>
+      <div class="tags">#Marketing #Classification #AI-Assisted</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Inconsistent Superhost prediction hurt prioritization of high-performing listings during promotions and algorithmic rankings.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Used Google Colab and GitHub Copilot to build a classification pipeline with scikit-learn on Airbnb review data; handled missingness and outliers with AI-assisted logic.</p>
+      <p><strong>Result:</strong> Achieved 91% precision in classifying Superhosts; enhanced exposure for top listings and improved trustworthiness in marketing campaigns.</p>
+      <div class="tools"><span>Python</span><span>AI Coding</span><span>scikit-learn</span><span>GitHub Copilot</span><span>Google Colab</span></div>
+    </div>
+  </div>
+
+  <!-- Project 9 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>EV Infrastructure Demand Forecast for New Markets</h3>
+      <div class="tags">#Finance #Growth Strategy #Location Analytics</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Leadership needed forecasts for charger demand in expansion regions to support capital allocation and zoning decisions.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Modeled population, commute patterns, and EV adoption across zip codes using regression + census data; created dashboards with charger forecasts per site.</p>
+      <p><strong>Result:</strong> Forecasted 5-year charger demand with ±8.4% error; supported investment decisions across 17 new regional markets.</p>
+      <div class="tools"><span>Python</span><span>Regression</span><span>EDA</span><span>Census Data</span><span>Forecast Dashboard</span></div>
+    </div>
+  </div>
+
+  <!-- Project 10 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>OTG Pod Allocation Simulation</h3>
+      <div class="tags">#Supply Chain #Simulation #Field Planning</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Field pod availability was misaligned with site demand, leading to travel inefficiencies and unmet installation capacity.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Simulated pod usage and travel time using site visit data and installation targets; built optimization tool in Python to reassign pods to high-need zones.</p>
+      <p><strong>Result:</strong> Boosted daily installation capacity by 18% and reduced technician travel by 2.3 hours per day.</p>
+      <div class="tools"><span>Python</span><span>Simulation</span><span>Field Operations</span><span>Optimization</span></div>
+    </div>
+  </div>
+
+  <!-- Project 11 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Bankruptcy Risk Classification with SAS Enterprise Miner</h3>
+      <div class="tags">#Finance #Risk #SAS</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Finance teams lacked predictive insights into bankruptcy risk, increasing exposure to defaults during lending decisions.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Built and tested models in SAS Miner for classification of bankruptcy events based on financial ratios, trained on historical bankruptcy filings.</p>
+      <p><strong>Result:</strong> Delivered a 0.86 AUC model; enabled early warning for at-risk borrowers and reduced bad debt exposure.</p>
+      <div class="tools"><span>SAS Enterprise Miner</span><span>Logistic Regression</span><span>Risk Modeling</span><span>Classification</span></div>
+    </div>
+  </div>
+
+  <!-- Project 12 -->
+  <div class="project-card fade-in">
+    <div class="card-left">
+      <h3>Revenue Forecasting + Market Expansion Strategy</h3>
+      <div class="tags">#Finance #Strategy #Forecasting</div>
+      <p class="problem">
+        <strong>Business Problem:</strong> Company lacked visibility into future revenues under expansion scenarios and needed a business case for regional rollout.</p>
+    </div>
+    <div class="card-right">
+      <p><strong>How I Solved It:</strong> Built Python-based model using historical revenue, TAM estimates, and competitor presence to forecast revenue by geography.</p>
+      <p><strong>Result:</strong> Delivered expansion strategy prioritizing 5 regions, projecting $4.2M lift in 2 years with positive NPV and strategic alignment.</p>
+      <div class="tools"><span>Python</span><span>Revenue Forecasting</span><span>Business Strategy</span><span>TAM</span><span>Competitive Analysis</span></div>
+    </div>
+  </div>
+
+</section>
+
     </div>
   </section>
 
