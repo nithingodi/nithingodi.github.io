@@ -366,3 +366,21 @@ body.dark .tools {
   background: var(--primary);
   border-radius: 50%;
 }
+<section id="contact">
+  <h2>Let’s Connect</h2>
+  <p>I’m open to roles in data analytics, product strategy, and operations analytics. Reach out for collaboration, questions, or just to say hi!</p>
+
+  <div class="contact-icons">
+    <a href="mailto:godinithin1@gmail.com" target="_blank" aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://linkedin.com/in/nithingodi" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/nithingodi" target="_blank" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+
+  <p class="contact-footer">© 2025 Nithin Godi</p>
+</section>
