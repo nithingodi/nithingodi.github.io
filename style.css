@@ -310,3 +310,59 @@ body.dark .tools {
   background: var(--primary);
   border-radius: 50%;
 }
+#timeline {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+#timeline h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#timeline p {
+  font-size: 1rem;
+  color: var(--text);
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+.timeline {
+  position: relative;
+  border-left: 2px solid var(--primary);
+  padding-left: 2rem;
+}
+.timeline-item {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.timeline-date {
+  font-size: 0.85rem;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.5px;
+}
+.timeline-content {
+  background: var(--accent);
+  padding: 1rem 1.3rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+.timeline-content h4 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: var(--text);
+}
+.timeline-content p {
+  font-size: 0.92rem;
+  opacity: 0.9;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.1rem;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  background: var(--primary);
+  border-radius: 50%;
+}
