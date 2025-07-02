@@ -1,1 +1,163 @@
+/* === BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.4s ease;
+  line-height: 1.6;
+  padding-top: 80px;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --primary: #4263eb;
+  --accent: #f0f0f0;
+}
+
+body.dark {
+  --bg: #0e1117;
+  --text: #f8f9fa;
+  --primary: #60a5fa;
+  --accent: #1f2937;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg);
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+.nav-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* === HERO === */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, var(--bg), var(--accent));
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.cta-buttons a {
+  text-decoration: none;
+  color: white;
+  background: var(--primary);
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
+.cta-buttons a i {
+  font-size: 1.3rem;
+}
+
+/* === SECTION STYLES === */
+section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.skills-grid, .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* === FOOTER === */
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: var(--accent);
+  color: var(--text);
+}
+.footer .icons a {
+  margin: 0 0.5rem;
+  color: var(--text);
+  font-size: 1.4rem;
+}
+
+/* === DARK MODE TOGGLE === */
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 24px;
+  margin-left: 1rem;
+}
+.theme-switch input {
+  display: none;
+}
+.theme-switch .slider {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.theme-switch .slider::before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+.theme-switch input:checked + .slider {
+  background-color: var(--primary);
+}
+.theme-switch input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+/* === ANIMATION === */
+.dynamic::after {
+  content: 'Clickstreams';
+  animation: rotateWords 8s infinite;
+  font-weight: 600;
+}
+@keyframes rotateWords {
+  0%, 25% { content: 'Clickstreams'; }
+  26%, 50% { content: 'Cost Curves'; }
+  51%, 75% { content: 'Funnels'; }
+  76%, 100% { content: 'Forecasts'; }
+}
 
