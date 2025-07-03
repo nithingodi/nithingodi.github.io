@@ -15,7 +15,7 @@
       <h1 class="logo">Nithin Godi</h1>
       <nav>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#timeline">Timeline</a>
         <a href="#contact">Contact</a>
@@ -29,7 +29,7 @@
 
   <section class="hero">
     <h2>
-      From <span class="dynamic" id="first"></span> to <span class="dynamic" id="second"></span>
+      From <span class="dynamic" id="first">Manufacturing</span> to <span class="dynamic" id="second">Product Analytics</span>
     </h2>
     <p>I turn data into decisions across Product, Supply Chain, and Marketing.</p>
     <div class="cta-buttons">
@@ -39,24 +39,95 @@
     </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>I'm Nithin Godi — an analytics generalist and technical specialist with 2+ years of experience optimizing pricing, product funnels, and inventory systems. I bridge business needs with statistical modeling, building interpretable, scalable solutions across product, marketing, and supply chain. With tools like Python, SQL, XGBoost, and SHAP, I turn insights into impact.</p>
+  <section id="about" class="about-section fade-in">
+    <div class="about-container">
+      <div class="about-left">
+        <img src="your-profile-pic.png" alt="Nithin Godi" class="profile-pic">
+      </div>
+      <div class="about-right">
+        <h2>About Me</h2>
+        <p>
+          I’m Nithin Godi — a data + product + supply chain analyst blending statistical modeling,
+          operations strategy, and real-world execution. My work integrates forecasting, segmentation,
+          optimization, and business storytelling using Python, SQL, and BI tools.
+        </p>
+        <p>
+          With experience spanning retail, manufacturing, and consulting, I design scalable data solutions
+          that drive action and business value. I’m now seeking roles where I can bring this hybrid thinking
+          to high-impact teams.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id="projects" class="projects">
-    <h2>Featured Projects</h2>
-    <div class="filter-buttons">
-      <button class="filter-button active" data-category="all">All</button>
-      <button class="filter-button" data-category="supply">Supply Chain</button>
-      <button class="filter-button" data-category="marketing">Marketing</button>
-      <button class="filter-button" data-category="product">Product</button>
-    </div>
-    <div class="project-grid">
-      <!-- All 12 project cards are inserted here in horizontal layout format -->
-    
+  <section id="experience" class="experience-section fade-in">
+    <h2>Work Experience</h2>
+    <div class="experience-grid">
+      <!-- Aaditri Experience -->
+      <div class="job-card">
+        <h3>Aaditri UPVC Windows (Co-Founder)</h3>
+        <p class="job-duration">Oct 2022 – Jul 2024</p>
+        <div class="domain-columns">
+          <div class="domain-column">
+            <h4>Supply Chain</h4>
+            <ul>
+              <li>Built SKU-level tracker in Excel to monitor purchase–consumption–stock for glass, profiles, and hardware across 45+ projects, reducing material shortages by 32%.</li>
+              <li>Simulated reorder logic for fast- vs slow-moving items using ABC–XYZ classification, optimizing vendor orders and reducing idle stock by ₹4.3L quarterly.</li>
+            </ul>
+          </div>
+          <div class="domain-column">
+            <h4>Product</h4>
+            <ul>
+              <li>Created quote-to-order mapping logic to identify delays and quote mismatches, reducing late installations by 18% and enabling proactive escalation in Excel.</li>
+              <li>Redesigned estimation template to auto-calculate BOM and expected margins by window type, increasing quote approval speed by 24%.</li>
+            </ul>
+          </div>
+          <div class="domain-column">
+            <h4>Marketing</h4>
+            <ul>
+              <li>Analyzed conversion data from 3 marketing teams; identified higher close rate in network-driven referrals, shifting budget allocation and lifting deal conversion by 11%.</li>
+              <li>Built Excel-based lead log and dashboard to track customer journey from lead to deal, enabling faster response cycles and improved conversion visibility.</li>
+            </ul>
+          </div>
+          <div class="domain-column">
+            <h4>Finance</h4>
+            <ul>
+              <li>Created monthly revenue, cost, and gross margin dashboards using Excel for 18 months of operations; flagged margin dips tied to profile wastage.</li>
+              <li>Tracked vendor payments, pending dues, and cashflow in a consolidated sheet, enabling timely payouts and resolving 90% of vendor disputes pre-escalation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-<!-- Project 1 -->
+      <!-- Meijer Experience -->
+      <div class="job-card">
+        <h3>Meijer (Data Consultant)</h3>
+        <p class="job-duration">Jan 2023 – May 2023</p>
+        <div class="domain-columns">
+          <div class="domain-column">
+            <h4>Marketing</h4>
+            <ul>
+              <li>Performed linear regression on 400K customers to assess impact of 35 offer categories on revenue using Python and pandas, revealing top drivers (p < 0.05).</li>
+              <li>Identified digital metric as significant predictor of offer activation through EDA and regression, informing content tweaks to boost engagement.</li>
+              <li>Applied T-Learner uplift modeling to quantify incremental lift across customer segments, enabling targeting strategy for next campaign.</li>
+            </ul>
+          </div>
+          <div class="domain-column">
+            <h4>Finance</h4>
+            <ul>
+              <li>Forecasted customer LTV using XGBoost regression; achieved ±$12 MAE and explained feature importance using SHAP values for stakeholder visibility.</li>
+              <li>Performed cohort-wise churn classification using Python, balancing class weights and optimizing F1 score (84%) for campaign attrition targeting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="projects" class="projects">
+  <h2>Portfolio Projects</h2>
+  <p>Real-world projects solving business problems across Supply Chain, Finance, Product, and Marketing domains.</p>
+
+  <!-- Project 1 -->
   <div class="project-card fade-in">
     <div class="card-left">
       <h3>Churn + LTV Forecasting for Retention Strategy</h3>
@@ -110,7 +181,8 @@
       <h3>A/B Funnel Drop-Off + Rage Click Analysis</h3>
       <div class="tags">#Product #UX Research #Experimentation</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Product managers lacked visibility into conversion drop-offs and friction points across the checkout funnel, limiting UX improvements.</p>
+        <strong>Business Problem:</strong> Product managers lacked visibility into conversion drop-offs and friction points across the checkout funnel, limiting UX improvements.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Conducted A/B tests and session replay analysis using rage clicks, drop-off paths, and scroll-depth. Visualized funnel stages and friction zones with Python dashboards.</p>
@@ -118,14 +190,14 @@
       <div class="tools"><span>Python</span><span>A/B Testing</span><span>Session Replay</span><span>matplotlib</span><span>UX Analytics</span></div>
     </div>
   </div>
-
   <!-- Project 5 -->
   <div class="project-card fade-in">
     <div class="card-left">
       <h3>Conjoint Analysis for Price Sensitivity & Feature Tradeoffs</h3>
       <div class="tags">#Marketing #Pricing Strategy #Survey Analytics</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Stakeholders lacked clarity on which product features drove purchase intent and how customers valued each relative to price.</p>
+        <strong>Business Problem:</strong> Stakeholders lacked clarity on which product features drove purchase intent and how customers valued each relative to price.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Designed and analyzed a choice-based conjoint survey using Python. Modeled feature utilities and price elasticity to estimate market share changes.</p>
@@ -140,7 +212,8 @@
       <h3>GenAI Document QA Assistant (LangChain + RAG)</h3>
       <div class="tags">#Product #AI #GenAI</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Internal product teams struggled to find answers across scattered documentation, slowing onboarding and bug triage.</p>
+        <strong>Business Problem:</strong> Internal product teams struggled to find answers across scattered documentation, slowing onboarding and bug triage.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Built an RAG-based chatbot using LangChain and FAISS to answer product documentation queries using vector search over 200+ Markdown files.</p>
@@ -155,7 +228,8 @@
       <h3>Production Simulation + Supply Commit Tracking</h3>
       <div class="tags">#Supply Chain #Manufacturing #Capacity Planning</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Mismatch between production quotes and supply commitments led to capacity overflow and customer delivery delays.</p>
+        <strong>Business Problem:</strong> Mismatch between production quotes and supply commitments led to capacity overflow and customer delivery delays.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Modeled supply commit vs build plan mismatches using Excel simulation and BOM-level SKU mapping. Flagged quote-PO variances and idle capacity risks.</p>
@@ -170,7 +244,8 @@
       <h3>Airbnb Superhost Classification using AI-Assisted Coding</h3>
       <div class="tags">#Marketing #Classification #AI-Assisted</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Inconsistent Superhost prediction hurt prioritization of high-performing listings during promotions and algorithmic rankings.</p>
+        <strong>Business Problem:</strong> Inconsistent Superhost prediction hurt prioritization of high-performing listings during promotions and algorithmic rankings.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Used Google Colab and GitHub Copilot to build a classification pipeline with scikit-learn on Airbnb review data; handled missingness and outliers with AI-assisted logic.</p>
@@ -178,14 +253,14 @@
       <div class="tools"><span>Python</span><span>AI Coding</span><span>scikit-learn</span><span>GitHub Copilot</span><span>Google Colab</span></div>
     </div>
   </div>
-
   <!-- Project 9 -->
   <div class="project-card fade-in">
     <div class="card-left">
       <h3>EV Infrastructure Demand Forecast for New Markets</h3>
       <div class="tags">#Finance #Growth Strategy #Location Analytics</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Leadership needed forecasts for charger demand in expansion regions to support capital allocation and zoning decisions.</p>
+        <strong>Business Problem:</strong> Leadership needed forecasts for charger demand in expansion regions to support capital allocation and zoning decisions.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Modeled population, commute patterns, and EV adoption across zip codes using regression + census data; created dashboards with charger forecasts per site.</p>
@@ -200,7 +275,8 @@
       <h3>OTG Pod Allocation Simulation</h3>
       <div class="tags">#Supply Chain #Simulation #Field Planning</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Field pod availability was misaligned with site demand, leading to travel inefficiencies and unmet installation capacity.</p>
+        <strong>Business Problem:</strong> Field pod availability was misaligned with site demand, leading to travel inefficiencies and unmet installation capacity.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Simulated pod usage and travel time using site visit data and installation targets; built optimization tool in Python to reassign pods to high-need zones.</p>
@@ -215,7 +291,8 @@
       <h3>Bankruptcy Risk Classification with SAS Enterprise Miner</h3>
       <div class="tags">#Finance #Risk #SAS</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Finance teams lacked predictive insights into bankruptcy risk, increasing exposure to defaults during lending decisions.</p>
+        <strong>Business Problem:</strong> Finance teams lacked predictive insights into bankruptcy risk, increasing exposure to defaults during lending decisions.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Built and tested models in SAS Miner for classification of bankruptcy events based on financial ratios, trained on historical bankruptcy filings.</p>
@@ -230,7 +307,8 @@
       <h3>Revenue Forecasting + Market Expansion Strategy</h3>
       <div class="tags">#Finance #Strategy #Forecasting</div>
       <p class="problem">
-        <strong>Business Problem:</strong> Company lacked visibility into future revenues under expansion scenarios and needed a business case for regional rollout.</p>
+        <strong>Business Problem:</strong> Company lacked visibility into future revenues under expansion scenarios and needed a business case for regional rollout.
+      </p>
     </div>
     <div class="card-right">
       <p><strong>How I Solved It:</strong> Built Python-based model using historical revenue, TAM estimates, and competitor presence to forecast revenue by geography.</p>
@@ -238,10 +316,9 @@
       <div class="tools"><span>Python</span><span>Revenue Forecasting</span><span>Business Strategy</span><span>TAM</span><span>Competitive Analysis</span></div>
     </div>
   </div>
-    </div>
-  </section>
+</div> <!-- End of project section -->
 
-  <section id="skills" class="skills">
+<section id="skills" class="skills">
   <h2>Technical Skills by Domain</h2>
   <p>Organized by domain expertise across analytics, forecasting, modeling, and operations.</p>
 
@@ -279,10 +356,7 @@
 
   </div>
 </section>
-
-      
-
-  <section id="timeline">
+<section id="timeline">
   <h2>Journey & Milestones</h2>
   <p>Milestones across my academic, entrepreneurial, and data-driven consulting journey.</p>
 
@@ -322,7 +396,6 @@
 
   </div>
 </section>
-
 <section id="contact">
   <h2>Get In Touch</h2>
   <p>Feel free to reach out for collaborations, roles, or just a friendly chat.</p>
@@ -376,9 +449,6 @@
   <p class="contact-footer">© 2025 Nithin Godi</p>
 </section>
 
-
-
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
