@@ -1,60 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nithin Godi | Data + Product + Supply Chain Analyst Portfolio">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a2e0e6e6c4.js" crossorigin="anonymous"></script>
-  <title>Nithin Godi | Portfolio</title>
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="nav-container">
-      <h1 class="logo">Nithin Godi</h1>
-      <nav class="nav-links">
-        <a href="#about">About Me</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#timeline">Timeline</a>
-        <a href="#contact">Contact</a>
-        <label class="theme-switch">
-          <input type="checkbox" id="dark-toggle" />
-          <span class="slider"></span>
-        </label>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Landing Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>
-        From <span class="highlight" id="role1">Data</span> to
-        <span class="highlight" id="role2">Decisions</span>
-      </h1>
-      <p>I blend analytics, product thinking, and strategy across supply chain, marketing, and finance domains.</p>
-
-      <div class="cta-buttons">
-        <a href="assets/resume.pdf" class="btn" target="_blank">📄 Download Resume</a>
-        <a href="https://github.com/nithingodi" class="icon-btn" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://linkedin.com/in/nithingodi" class="icon-btn" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nithin Godi | Data + Product + Supply Chain Analyst Portfolio" />
+    <title>Nithin Godi | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e0e6e6c4.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Nithin Godi</h1>
+        <nav>
+          <a href="#about">About Me</a>
+          <a href="#experience">Work Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="toggle-container">
+          <label class="switch">
+            <input type="checkbox" id="mode-toggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <script>
-    // Toggle Dark Mode
-    document.getElementById('dark-toggle').addEventListener('change', function () {
-      document.body.classList.toggle('dark');
-    });
-  </script>
-</body>
+    <!-- Landing Section -->
+    <section class="hero">
+      <h2><span class="accent">From Manufacturing</span> to <span class="accent">Product Analytics</span></h2>
+      <p>I turn data into decisions across Product, Supply Chain, and Marketing domains.</p>
+      <a href="assets/NithinGodi_Resume.pdf" class="btn-primary" download><i class="fas fa-file-alt"></i> Download Resume</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h3>About Me</h3>
+          <p>
+            I'm Nithin Godi — a data + product + supply chain analyst blending statistical modeling,
+            operations strategy, and real-world execution. My work spans forecasting, optimization, segmentation, and storytelling using Python, SQL, and BI tools.
+          </p>
+          <p>
+            With experience spanning retail, manufacturing, and consulting, I design scalable data solutions
+            that drive business value. I'm now seeking roles where I can bring this hybrid thinking to high-impact teams.
+          </p>
+        </div>
+        <img src="assets/profile.png" alt="Nithin Godi" class="about-img">
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section class="experience" id="experience">
+      <h3>Work Experience</h3>
+      <div class="experience-card">
+        <h4>Aaditri UPVC Windows (Co-Founder)</h4>
+        <span class="exp-date">Oct 2022 – Jul 2024</span>
+        <div class="domain-columns">
+          <div>
+            <h5>Supply Chain</h5>
+            <ul>
+              <li>Built SKU-level tracker to reduce material shortages by 32%</li>
+              <li>Simulated reorder logic using ABC–XYZ, saving ₹4.3L idle stock per quarter</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Product</h5>
+            <ul>
+              <li>Mapped quote-to-order delays; improved quote approval by 24%</li>
+              <li>Redesigned BOM templates enabling higher quote precision</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Marketing</h5>
+            <ul>
+              <li>Analyzed marketing conversion data across 3 teams; lifted deal conversion by 11%</li>
+              <li>Created Excel dashboard to visualize funnel journey from lead to deal</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Finance</h5>
+            <ul>
+              <li>Built 18-month cost/revenue dashboards in Excel; flagged margin dips by profile</li>
+              <li>Consolidated vendor payout tracker resolving 90% pre-escalation cases</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h4>Meijer (Data Consultant)</h4>
+        <span class="exp-date">Jan 2023 – May 2023</span>
+        <div class="domain-columns">
+          <div>
+            <h5>Marketing</h5>
+            <ul>
+              <li>Used regression on 400K customers; revealed digital drivers (p < 0.05)</li>
+              <li>Applied T-Learner uplift modeling for targeted campaign strategy</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Finance</h5>
+            <ul>
+              <li>Forecasted churn and LTV using XGBoost; achieved ±₹12 MAE</li>
+              <li>Used SHAP for feature insights; enabled stakeholder visibility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built with ❤ by Nithin Godi</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
